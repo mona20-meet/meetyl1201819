@@ -1,4 +1,4 @@
-
+from turtle import *
 import turtle
 from turtle import Turtle
 import random
@@ -21,13 +21,12 @@ turtle.mainloop()
 class hexagon(Turtle):
 '''
 turtle.home()
-turtle.begin_poly()
-turtle.fd(100)
-turtle.left(20)
-turtle.fd(30)
-turtle.left(60)
-turtle.fd(50)
-turtle.end_poly()
-p = turtle.get_poly()
-register_shape("myFavouriteShape")
+for i in range (6):
+	turtle.begin_poly()
+	turtle.fd(100)
+	turtle.left(60)
+
+	turtle.end_poly()
+yeet= turtle.get_poly()
+register_shape('yeet', yeet)
 turtle.mainloop()

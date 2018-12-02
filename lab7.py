@@ -29,15 +29,13 @@ def check_collision(ball1,ball2):
 	if D <= balls[1].radius +balls[0].radius :	
 		print('the balls collided')
 check_collision(ball1,ball2)
-for i in range(10):
-	w=random.randint(1,101)
-def teleportball(ball1,ball2):
-	x2=ball1.xcor()
-	y2=ball1.ycor()
-	x1=ball2.xcor()
-	y1=ball2.ycor()
-	D = math.sqrt(math.pow((x2-x1),2) + math.pow((y2-y1),2))
-	if D > balls[1].radius +balls[0].radius:
-		ball1.goto(w,w)
-teleportball(ball1,ball2)
+def teleport ():
+	oldx2=ball1.xcor()
+	oldy2=ball1.ycor()
+	oldx1=ball2.xcor()
+	oldy1=ball2.ycor()
+	D = math.sqrt(math.pow((oldx2-oldx1),2) + math.pow((oldy2-oldy1),2))
+	if D <= balls[1].radius +balls[0].radius:
+		ball1.goto(random.randint(1,100),random.randint(1,100))
+teleport()
 turtle.mainloop()
