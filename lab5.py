@@ -48,6 +48,7 @@ you = Person("Ethan", "Reed")
 me.speak()
 you.speak()
 '''
+'''
 import tkinter as tk
 from tkinter import simpledialog
 # Calculating Grades (ok, let me think about this one)
@@ -106,6 +107,78 @@ if letter_grade is "F":
     print("Student is failing.")
 else:
     print ("Student is passing.")
-    '''
+  '''
+'''
+Problem Five:
+class Person(object):
+  def __init__(self, name, favorite_food,age):
+       self.name = name
+       self.fav_food = favorite_food
+       self.age = age
+  def define_color(self, color):
+       self.color = color
+
+  def print_info(self):
+    print("My name is " + self.name + ", I'm " + str(self.age) + " years old.")
+    print("My favorite food is " + self.fav_food + " and my favorite color is " + self.color)
 
 
+a = Person("Britney", "Pizza", 16)
+a.define_color("Black")
+a.print_info()
+
+b = Person("Jake", 'chocolate',15)
+b.define_color('red')
+b.print_info()
+'''
+'''
+Problem Six:
+class Bear(object):
+  def __init__(self, name):
+    self.name = name
+    print('A new bear was created. Its name is ' + self.name)
+    
+  def say_hi(self):
+    print('Hi! I’m a bear. My name is ' + self.name)
+my_bear = Bear('Danny')
+print(my_bear.say_hi())
+'''
+'''
+Problem Seven:
+balloons = 5
+name = 'Ron'
+color = 'Yellow'
+print('This is a tale about ' + str(balloons) + ' balloons The first kid is ' + name + ' who got a ' + color + ' balloon')
+'''
+'''
+#Problem 8
+class Cake():
+    def __init__(self,flavor):
+        self.flavor = flavor
+
+    def eat(self):
+        print('Yummy!!! Eating a '+ self.flavor +' cake :)')
+
+cake = Cake('chocolate')
+cake.eat()
+# what I want to be printed: Yummy!!! Eating a chocolate cake :)
+'''
+'''
+#Problem 9
+class Cat(object):
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age 
+  def birthday(self):
+    self.age += 1
+    if self.age >= 100:
+      print('Ding dong, the cat is dead!')
+    else:
+      print(self.name, 'is having its ', self.age, ' birthday!')
+
+my_cat = Cat('Salem',8)
+my_cat.birthday()
+# what I want: my cat to celebrate its 8th birthday (and all the 
+# birthdays that come before that)
+'''
+#lab_is_finished
