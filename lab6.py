@@ -30,3 +30,4 @@ for i in range (6):
 yeet= turtle.get_poly()
 register_shape('yeet', yeet)
 turtle.mainloop()
+#lab_is_finished

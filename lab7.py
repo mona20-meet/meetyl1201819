@@ -39,3 +39,4 @@ def teleport ():
 		ball1.goto(random.randint(1,100),random.randint(1,100))
 teleport()
 turtle.mainloop()
+#lab_is_finished
