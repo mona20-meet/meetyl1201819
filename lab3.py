@@ -2,7 +2,7 @@ import turtle
 image = 'yes.gif'
 turtle.addshape(image)
 turtle.shape(image)
-turtle.speed(100)
+turtle.speed(0)
 for i in range (1000) :
 	turtle.forward(170)
 	turtle.right(45)
